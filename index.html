@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crivel — Internal Pitch</title>
-  <meta name="description" content="Crivel — the in-tenant deal-origination engine for Swiss/DACH private equity. Internal working artifact." />
+  <title>Crivel · Internal Memo</title>
+  <meta name="description" content="Crivel is the in-tenant origination engine for small private-capital firms. Internal working memo." />
   <link rel="icon" type="image/svg+xml" href="assets/crivel_icon_green.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,262 +13,408 @@
 </head>
 <body>
 
-  <!-- ============ top bar ============ -->
-  <header class="topbar">
-    <div class="wrap">
-      <a href="#top"><img class="brand" src="assets/crivel_full_logo_black.svg" alt="Crivel" /></a>
-      <nav>
-        <a href="#problem">Problem</a>
-        <a href="#product">Product</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#landscape">Landscape</a>
-        <a href="#market">Market</a>
-        <a href="#next">Next</a>
-      </nav>
+  <!-- ============ floating segmented nav ============ -->
+  <nav class="flownav">
+    <div class="group">
+      <a class="brand-seg icon-seg" href="#top" aria-label="Crivel"><img src="assets/crivel_icon_black.svg" alt="Crivel" /></a>
+      <a href="#problem">Problem</a>
+      <a href="#product">How it works</a>
+      <a href="#sources">Data layer</a>
+      <a href="#moat">Defensibility</a>
+      <a href="#market">Market</a>
+      <a href="#next">Next</a>
     </div>
-  </header>
+  </nav>
 
   <!-- ============ hero ============ -->
   <section class="hero" id="top">
+    <div class="hero-bg"><img src="assets/crivel_icon_green.svg" alt="" /></div>
     <div class="wrap">
-      <img class="logo" src="assets/crivel_full_logo_black.svg" alt="Crivel" />
-      <h1>Proprietary deal origination, <span class="accent">won before the auction.</span></h1>
-      <p class="one-liner">The in-tenant origination engine for small Swiss / DACH private-equity and origination teams. It watches the whole Swiss company universe, filters it to the firm's own thesis, flags the targets worth pursuing, and finds the warmest path in.</p>
-      <div class="tagrow">
-        <span class="tag green">Internal working artifact</span>
-        <span class="tag">Concept pressure-tested</span>
-        <span class="tag">One pilot client identified</span>
-        <span class="tag">Pre-build · June 2026</span>
-      </div>
+      <span class="memo-pill">Internal Memo</span>
+      <h1>The in-tenant origination engine for private-capital firms.</h1>
+      <p class="sub">Crivel fuses a firm's own relationship network with a deep graph of private companies, then monitors it against the firm's strategy. It surfaces the targets worth pursuing and the warmest path to the decision-maker.</p>
+      <div class="status-line"><strong>Status:</strong> Ideation &nbsp;·&nbsp; <strong>Date:</strong> 23.06.2026 &nbsp;·&nbsp; <strong>Owner:</strong> Mischa</div>
+      <div class="hero-byline">a product by quantflow</div>
     </div>
   </section>
 
-  <!-- ============ 01 problem ============ -->
+  <!-- ============ problem ============ -->
   <section id="problem">
     <div class="wrap">
       <div class="section-head">
-        <div class="section-num">01 / The problem</div>
-        <h2>The best deals are found before they reach a banker's auction. Small firms are worst equipped to find them.</h2>
-        <p class="lede">Lower-mid-market PE returns are made at origination. The moment a deal hits a competitive auction, price and returns compress. Two things make proprietary origination hard — and they are exactly the two things a 10–15 person firm does by hand.</p>
+        <div class="section-num">The problem</div>
+        <h2>Proprietary origination is won on relationships and timing, and small firms do it by hand.</h2>
+        <p class="lede">The best opportunities, a company to buy or a wealthy owner to win as a client, are found and secured before they reach a competitive process, where price and odds turn against you. Winning them comes down to two things, and a small, network-led firm does both manually.</p>
       </div>
       <div class="grid cols-2">
         <div class="card">
           <div class="k">Problem 01</div>
-          <h3>Finding the right targets, reading the moment</h3>
-          <p>Switzerland publishes almost no private-company financials. Just building a clean list of companies that fit the mandate is hard — and knowing which are quietly heading toward a transaction is harder. The signal is buried in registry filings, regional press, and structural moves nobody systematically watches.</p>
+          <h3>Knowing which targets fit, and which are in play</h3>
+          <p>Out of a huge universe, which targets actually fit the firm's mandate, and which are reachable now or quietly heading toward a transaction? The signal is buried in filings, regional press, and structural moves nobody systematically watches.</p>
         </div>
         <div class="card">
           <div class="k">Problem 02</div>
-          <h3>Getting to the owner, warmly</h3>
-          <p>Swiss owners engage people they trust — their auditor, their bank, a mutual contact — not whoever cold-called. The relationship wins the deal, and that relationship lives scattered across the firm's inboxes, calendars, and partners' heads.</p>
+          <h3>Reaching the decision-maker through someone they trust</h3>
+          <p>Owners and UHNW individuals engage people they trust, not whoever cold-called. The relationship wins. It lives scattered across the firm's inboxes, calendars, and partners' heads, and is never mapped.</p>
         </div>
       </div>
-      <p class="kicker-line">Today this is done with manual research, personal networks, and instinct. The global software suites don't help: built for US-scale breadth, blind to Swiss private companies, and they pull the firm's data out into a US cloud.</p>
-    </div>
-  </section>
-
-  <!-- ============ 02 why it matters ============ -->
-  <section class="tone-paper" id="why">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="section-num">02 / Why it matters</div>
-        <h2>A structural wave of Swiss ownership change, with no map.</h2>
-      </div>
-      <div class="stats">
-        <div class="stat">
-          <div class="big">~93k</div>
-          <div class="lbl">Swiss SME owners facing succession within five years — and most family-internal handovers fail.</div>
-        </div>
-        <div class="stat">
-          <div class="big">~110</div>
-          <div class="lbl">Core serious-addressable Swiss accounts doing proprietary buy-side origination, plus a softer ~100-account tail.</div>
-        </div>
-        <div class="stat">
-          <div class="big">5–7 yr</div>
-          <div class="lbl">Swiss deal cycle — long enough that the firm needs felt value on day one, not just a closed deal.</div>
-        </div>
-      </div>
-      <p class="kicker-line">There is no list of "who fits, and who's in play." That absence is the opportunity.</p>
-    </div>
-  </section>
-
-  <!-- ============ 03 core insight ============ -->
-  <section class="tone-dark" id="insight">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">03 / The core insight</div>
-        <h2>The behaviour is the product.</h2>
-      </div>
-      <div class="split">
-        <div>
-          <p class="pull">The kestrel hovers over a wide field, scans patiently, and <span class="accent">strikes on the one movement that matters.</span></p>
-          <p class="note" style="margin-top:24px;">Crivel is that, almost literally: continuously monitor a huge universe of companies, surface the one signal that matters, and find the precise, warmest line in. Not a brute-force dive — the patient scan, then the exact strike.</p>
-        </div>
-        <div>
-          <ul class="ticks">
-            <li><strong>The trusted advisor is a first-class node.</strong> In Swiss SME M&amp;A, the statutory auditor (<em>Revisionsstelle</em>) is public in the register. One Treuhand can be the warmest path to forty family-firm doors — and we can build that graph deterministically, for free.</li>
-            <li><strong>Fit doesn't need a sell-signal.</strong> A strong-fit company with a warm path is worth pursuing even with no sell-signal at all. Timing raises priority; it never decides eligibility.</li>
-            <li><strong>The firm's own strategy is the filter.</strong> The same public event produces a different, prioritized output for every client — because it's ranked against their thesis and their network.</li>
-          </ul>
-        </div>
+      <div class="callout-green">
+        <div class="k">The gap in the market</div>
+        <p>This is hardest exactly where the opportunity is richest. In Switzerland and the wider DACH region, private companies publish almost no financials, so even building the list is hard, and the global software suites are built for US-scale breadth, do not understand these private companies, and pull the firm's data out into a US cloud. <span class="muted">Deep private-company data, plus the firm's own network, plus live monitoring, in the firm's own tenant, is unowned.</span></p>
       </div>
     </div>
   </section>
 
-  <!-- ============ 04 product idea ============ -->
-  <section id="product">
+  <!-- ============ how it works ============ -->
+  <section class="tone-paper" id="product">
     <div class="wrap">
       <div class="section-head">
-        <div class="section-num">04 / The product idea</div>
-        <h2>One origination funnel, run continuously.</h2>
-        <p class="lede">A two-plane system: a shared public substrate of the Swiss corporate-control graph, built once from open register data, joined at alert time with each firm's private, in-tenant network and thesis.</p>
+        <div class="section-num">How it works</div>
+        <h2>Two graphs, joined by the firm's strategy.</h2>
+        <p class="lede">Crivel builds one graph of public data about companies, people, and events, the same substrate shared across all our clients. Each firm also has a second graph: its own private relationship network, hard-isolated inside its own tenant and never shared. The firm's strategy is what joins them. It filters the universe to the mandate, monitors it for triggers, and scores what surfaces, so the same event produces a different ranked target for each firm.</p>
       </div>
-      <div class="funnel">
-        <div class="fstep"><div class="n">1</div><div class="t">Universe &amp; monitoring<span class="d">Build the Swiss company universe from Zefix / SOGC; ingest the daily register-change stream to catch events as they happen.</span></div></div>
-        <div class="fstep"><div class="n">2</div><div class="t">Thesis fit<span class="d">Narrow the whole universe to this firm's mandate — sector, size band, ownership, situation — and alert when a company newly enters it.</span></div></div>
-        <div class="fstep"><div class="n">3</div><div class="t">Timing &amp; triggers<span class="d">Detect early precursors from co-occurring register / press / structural signals within a window. A booster, not a gate.</span></div></div>
-        <div class="fstep"><div class="n">4</div><div class="t">Stakeholder &amp; warm path<span class="d">Resolve who actually decides, then overlay the firm's own network to find the shortest trusted route to that decision-maker.</span></div></div>
-        <div class="fstep"><div class="n">5</div><div class="t">The cited dossier<span class="d">An AI agent assembles a fully-cited target dossier — every claim clickable back to its source. Day-one ROI.</span></div></div>
+
+      <figure class="figure">
+        <svg viewBox="0 0 820 380" role="img" aria-label="A public data graph and a private in-tenant relationship graph join through the firm's strategy, which filters, monitors, and scores, to produce a ranked, cited list of targets">
+          <defs>
+            <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto">
+              <path d="M0,0 L7,3.2 L0,6.4 Z" fill="#073622"/>
+            </marker>
+          </defs>
+          <g font-family="Geist, sans-serif">
+            <!-- public graph plane -->
+            <rect x="24" y="34" width="252" height="126" rx="12" fill="#FFFFFF" stroke="#E1DFDB"/>
+            <text x="44" y="60" font-size="13" font-weight="600" fill="#073622">Public data graph</text>
+            <text x="44" y="78" font-size="11" fill="#5b5b58">companies, people, events</text>
+            <text x="44" y="93" font-size="11" fill="#9a978f">shared across our clients</text>
+            <g stroke="#cfccc6" stroke-width="1.3">
+              <line x1="120" y1="134" x2="86" y2="120"/>
+              <line x1="120" y1="134" x2="152" y2="114"/>
+              <line x1="120" y1="134" x2="198" y2="136"/>
+            </g>
+            <circle cx="86" cy="120" r="5.5" fill="#fff" stroke="#cfccc6" stroke-width="1.4"/>
+            <circle cx="152" cy="114" r="5.5" fill="#fff" stroke="#cfccc6" stroke-width="1.4"/>
+            <rect x="193" y="131" width="10" height="10" rx="2" fill="#fff" stroke="#cfccc6" stroke-width="1.4"/>
+            <circle cx="120" cy="134" r="7" fill="#073622"/>
+            <!-- private graph plane -->
+            <rect x="24" y="204" width="252" height="126" rx="12" fill="#FFFFFF" stroke="#073622"/>
+            <text x="44" y="230" font-size="13" font-weight="600" fill="#073622">Your relationship graph</text>
+            <text x="44" y="248" font-size="11" fill="#5b5b58">in-tenant, isolated, never shared</text>
+            <g stroke="#9fc4b3" stroke-width="1.4">
+              <line x1="86" y1="298" x2="148" y2="282"/>
+              <line x1="148" y1="282" x2="190" y2="306"/>
+              <line x1="86" y1="298" x2="190" y2="306"/>
+            </g>
+            <circle cx="86" cy="298" r="8" fill="#fff" stroke="#073622" stroke-width="2"/>
+            <circle cx="148" cy="282" r="5.5" fill="#fff" stroke="#9a978f" stroke-width="1.4"/>
+            <circle cx="190" cy="306" r="5.5" fill="#fff" stroke="#9a978f" stroke-width="1.4"/>
+            <!-- connectors into strategy -->
+            <path d="M276 118 L336 168" stroke="#073622" stroke-width="1.6" fill="none"/>
+            <path d="M276 266 L336 220" stroke="#073622" stroke-width="1.6" fill="none"/>
+            <!-- strategy engine -->
+            <rect x="336" y="118" width="156" height="150" rx="16" fill="#073622"/>
+            <text x="414" y="146" text-anchor="middle" font-size="13.5" font-weight="600" fill="#ffffff">Your strategy</text>
+            <g>
+              <rect x="356" y="160" width="116" height="26" rx="13" fill="none" stroke="rgba(255,255,255,0.35)"/>
+              <text x="414" y="177" text-anchor="middle" font-size="12" fill="#dff0e8">Filter</text>
+              <rect x="356" y="194" width="116" height="26" rx="13" fill="none" stroke="rgba(255,255,255,0.35)"/>
+              <text x="414" y="211" text-anchor="middle" font-size="12" fill="#dff0e8">Monitor</text>
+              <rect x="356" y="228" width="116" height="26" rx="13" fill="none" stroke="rgba(255,255,255,0.35)"/>
+              <text x="414" y="245" text-anchor="middle" font-size="12" fill="#dff0e8">Score</text>
+            </g>
+            <path d="M492 193 L540 193" stroke="#073622" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+            <!-- output: ranked targets -->
+            <rect x="542" y="118" width="254" height="150" rx="12" fill="#FFFFFF" stroke="#E1DFDB"/>
+            <text x="562" y="146" font-size="13" font-weight="600" fill="#073622">Ranked targets</text>
+            <g font-size="11" fill="#5b5b58">
+              <text x="562" y="174">1</text><rect x="576" y="166" width="190" height="9" rx="4" fill="#073622"/>
+              <text x="562" y="198">2</text><rect x="576" y="190" width="150" height="9" rx="4" fill="#3f6a57"/>
+              <text x="562" y="222">3</text><rect x="576" y="214" width="110" height="9" rx="4" fill="#7fa191"/>
+            </g>
+            <text x="562" y="250" font-size="11" fill="#9a978f">each fully cited, with the warm path in</text>
+            <!-- scoring formula, tied to Score -->
+            <text x="410" y="360" text-anchor="middle" font-size="11" fill="#8a877f">score = fit-gate &#215; attractiveness &#215; (base + reachability) &#215; (1 + timing) &#215; winnability</text>
+          </g>
+        </svg>
+        <figcaption class="fig-cap">A target is a company or a person. The warm path is additive: targets with no route in still surface, ranked lower.</figcaption>
+      </figure>
+
+      <h3 style="margin:50px 0 18px;">The funnel, run continuously</h3>
+      <div class="funnel-v">
+        <div class="frow"><div class="n">1</div><div class="t">Universe &amp; monitoring<span class="d">Build the universe from the data layer, then ingest the daily change stream to catch events as they happen.</span></div></div>
+        <div class="frow"><div class="n">2</div><div class="t">Thesis fit<span class="d">The firm's strategy narrows the universe to its mandate, and alerts when a target newly enters it.</span></div></div>
+        <div class="frow"><div class="n">3</div><div class="t">Timing &amp; triggers<span class="d">Detect early precursors from co-occurring signals within a window, and raise the priority of what is heating up.</span></div></div>
+        <div class="frow"><div class="n">4</div><div class="t">Stakeholder &amp; warm path<span class="d">Resolve who actually decides, then overlay the firm's network for the warmest route to them.</span></div></div>
+        <div class="frow"><div class="n">5</div><div class="t">Agentic layer<span class="d">Run agentic workflows on the result: a cited research report, an email draft, and more over time.</span></div></div>
       </div>
-      <div class="formula">fit <span class="x">×</span> reachability <span class="x">×</span> timing</div>
-      <p class="kicker-line" style="text-align:center;">Cultivate the companies that belong in your portfolio and approach them on a warm line — <em>and</em> reach the ones coming to market before the auction does.</p>
     </div>
   </section>
 
-  <!-- ============ 05 capabilities ============ -->
-  <section class="tone-grey" id="capabilities">
+  <!-- ============ data layer ============ -->
+  <section id="sources">
     <div class="wrap">
       <div class="section-head">
-        <div class="section-num">05 / Core capabilities</div>
-        <h2>The funnel stages are the feature set.</h2>
+        <div class="section-num">The data layer</div>
+        <h2>One graph, three kinds of input. The graph is the value; ingestion is a commodity.</h2>
+        <p class="lede">No single dataset is the product. Three kinds of source plug into one canonical graph, and because everything runs in the firm's tenant, licensed and private data flow into the firm's own graph and never leave.</p>
       </div>
       <div class="grid cols-3">
-        <div class="card"><div class="k">F1</div><h3>Universe &amp; monitoring</h3><p>The Swiss company universe plus a live register-change stream that catches events as they happen.</p></div>
-        <div class="card"><div class="k">F2</div><h3>Thesis-fit filter</h3><p>Narrow the universe to one firm's mandate and alert the moment a company newly qualifies.</p></div>
-        <div class="card"><div class="k">F3</div><h3>Timing &amp; trigger signals</h3><p>Early sell-side precursors from combinations of signals within a window — raises priority, never gates.</p></div>
-        <div class="card"><div class="k">F4</div><h3>Direct search</h3><p>Analyst-driven query of the universe, so the product stays useful between pushed signals.</p></div>
-        <div class="card"><div class="k">F5</div><h3>Stakeholder resolution</h3><p>Untangle layered family-holding ownership to find who actually decides — owner, chairman, CEO, CFO.</p></div>
-        <div class="card"><div class="k">F6</div><h3>Warm path</h3><p>Overlay the firm's own network on the public advisor graph for the shortest trusted route in.</p></div>
-        <div class="card"><div class="k">F7</div><h3>Cited dossier</h3><p>A fully-cited target dossier assembled on demand — provenance as a product feature, not a log.</p></div>
-        <div class="card"><div class="k">F8</div><h3>Intel capture &amp; dual-graph</h3><p>Frictionless capture of the firm's private intel into a per-client graph. The deepest moat.</p></div>
-        <div class="card"><div class="k">Who it's for</div><h3>The hunters</h3><p>Lower-mid-market PE, direct-investing family offices, and the better M&amp;A boutiques — anyone who lives off their network.</p></div>
+        <div class="card green-tint"><div class="k">Built by Crivel</div><h3>The data pipeline</h3><p>The public registers we ingest and structure ourselves: Zefix, the SOGC change stream, the cantonal registers, extending across DACH to the Bundesanzeiger and beyond. This is the substrate we build and own.</p></div>
+        <div class="card"><div class="k">Bring your own</div><h3>Third-party APIs</h3><p>Connect the data providers a firm already pays for, such as PitchBook. Optional, and a way to enrich the graph or extend into new regions. The client holds the key; we never pool data across firms.</p></div>
+        <div class="card"><div class="k">The firm's own</div><h3>Client network data</h3><p>The firm's own relationships, CRM, and captured intel form the private in-tenant graph that powers the warm path.</p></div>
+      </div>
+      <div class="callout-green">
+        <div class="k">And it compounds</div>
+        <p>The pipeline, target notes, outreach history, and pass or pursue decisions all live here, and analyst corrections write back into the graph. Over time Crivel becomes the firm's institutional sourcing memory, <span class="muted">which is exactly what leaving would cost them.</span></p>
       </div>
     </div>
   </section>
 
-  <!-- ============ 06 differentiation ============ -->
-  <section id="moat">
+  <!-- ============ one engine, two motions ============ -->
+  <section class="tone-grey" id="segments">
     <div class="wrap">
       <div class="section-head">
-        <div class="section-num">06 / Differentiation &amp; moat</div>
-        <h2>The moat is the fusion, not the model.</h2>
-        <p class="lede">The LLM is commoditizing and the open registry data is scrapeable. The defensible position is where the three layers meet — and the fact that it compounds with every analyst correction.</p>
+        <div class="section-num">One engine, two motions</div>
+        <h2>The same engine buys a company or wins a client.</h2>
+        <p class="lede">Origination is structurally the same problem whether the target is a company to acquire or a person to onboard: find the target, judge fit, research it, find the warm path, reach out. A target is a company or a person, and the engine does not change. Divergence is confined to the strategy layer and the agentic layer, so we serve both from one core.</p>
       </div>
-      <div class="grid cols-3">
-        <div class="card"><div class="k">Layer 01</div><h3>In-tenant by design</h3><p>The firm's sensitive data stays inside its own cloud boundary, Swiss-resident. Every incumbent pulls data out — keeping it in is both moat and compliance story.</p></div>
-        <div class="card"><div class="k">Layer 02</div><h3>DACH-deep entity graph</h3><p>A persistent, continuously-enriched Swiss corporate-control graph with owner inference the US suites can't match on small private firms.</p></div>
-        <div class="card"><div class="k">Layer 03</div><h3>Early-trigger monitoring</h3><p>Event detection on the live register stream, tuned to the precursor combinations that predict a Swiss family firm coming to market.</p></div>
+      <div class="grid cols-2">
+        <div class="card"><div class="k">Motion 01</div><h3>Deal origination</h3><p>Buy the company. The target is a private business, the trigger is succession or a structural move, and the warm path runs through its advisors and the firm's network.</p></div>
+        <div class="card"><div class="k">Motion 02</div><h3>Client origination</h3><p>Win the client. The target is a UHNW owner, the trigger is a liquidity or exit event, and the warm path runs through shared centres of influence. Won by warm introduction, not cold outreach.</p></div>
       </div>
-      <p class="kicker-line">It becomes the origination operating system: pipeline, target notes, outreach history, and pass / pursue decisions all live here. Leaving means losing the firm's institutional sourcing memory — and every correction sharpens the next result.</p>
+      <p class="kicker-line">The buyer is the combined private-capital firm: lower-mid-market PE, direct-investing family offices, multi-family offices, network-led wealth managers, and the better M&amp;A boutiques. Many do both under one roof, so one sale can unlock both use cases. We build deal origination first, with client origination as a fast-follow on the same spine.</p>
     </div>
   </section>
 
-  <!-- ============ 07 competitive landscape ============ -->
+  <!-- ============ agent-native ============ -->
+  <section id="agent">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">Agent-native</div>
+        <h2>Built agent-native, so we can layer automation on top of the platform.</h2>
+        <p class="lede">Crivel is built agent-native from the start. The platform's data and actions are structured as clean, typed, cited objects an agent can act on, not retrofitted onto a human-only tool. That lets us build and expand an agent framework on top to run whatever workflows we want over the firm's data, and it lets a firm use Crivel directly inside Claude.</p>
+      </div>
+      <div class="seam">
+        <div class="col">
+          <div class="k">From day one</div>
+          <h3>Agent-ready objects</h3>
+          <p>Every target, signal, warm path, and dossier is a structured, cited object an agent can read and act on.</p>
+          <div class="chips">
+            <span class="chip">Targets</span><span class="chip">Signals</span><span class="chip">Warm-paths</span><span class="chip">Dossiers</span>
+          </div>
+        </div>
+        <div class="col mid">
+          <div class="k">On top of the platform</div>
+          <h3>Our agent framework</h3>
+          <p>We build and expand workflows over the platform's data: a cited research report, an email draft, and more automations over time.</p>
+        </div>
+        <div class="col">
+          <div class="k">MCP interface</div>
+          <h3>Use it from Claude</h3>
+          <p>A firm calls Crivel from inside Claude, gets cited output back, and keeps working there.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ defensibility (the one dark beat) ============ -->
+  <section class="tone-dark" id="moat">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">Why it is defensible</div>
+        <h2>The moat is the combination, not any single feature.</h2>
+        <p class="lede">The LLM is commoditizing and the open registry data is scrapeable. No single layer is the moat. The defensible position is the fusion of four things that compound with use, in a place a competitor cannot cheaply copy.</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card"><div class="k">Layer 01</div><h3>DACH-deep entity graph</h3><p>A persistent, continuously-enriched corporate-control graph with owner inference the US suites cannot match on small private firms. The CH beneficial-owner register stays closed to us, so ownership is a permanent inference problem, which is itself the moat.</p></div>
+        <div class="card"><div class="k">Layer 02</div><h3>In-tenant, pluggable substrate</h3><p>The firm's sensitive data stays inside its own cloud boundary, Swiss-resident. Licensed data flows in and never leaves, which is cleaner on terms, the moat, and the compliance story at once.</p></div>
+        <div class="card"><div class="k">Layer 03</div><h3>Freshness and early triggers</h3><p>Event detection on the live change stream, tuned to the precursor combinations that predict a firm coming to market or an owner reaching a liquidity event.</p></div>
+        <div class="card"><div class="k">Layer 04</div><h3>Compounding state</h3><p>The firm's pipeline and decisions live here and write back into the graph, so accuracy improves with use and the product becomes the daily tool. Leaving means losing the firm's institutional sourcing memory.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ competitive landscape ============ -->
   <section class="tone-paper" id="landscape">
     <div class="wrap">
       <div class="section-head">
-        <div class="section-num">07 / Competitive landscape</div>
-        <h2>Everyone owns one category. Nobody fuses three for one geography.</h2>
+        <div class="section-num">Competitive landscape</div>
+        <h2>Everyone owns one category. Nobody fuses the wedge for this geography.</h2>
+        <p class="lede">The market splits into categories almost nobody combines. Crivel fuses several of them for one narrow geography, served white-glove to a small firm.</p>
       </div>
-      <div class="tablewrap">
-        <table class="hairtable">
+      <div class="matrix-wrap">
+        <table class="matrix">
           <thead>
-            <tr><th>Who</th><th>Great at</th><th>Why they miss our wedge</th></tr>
+            <tr>
+              <th class="cap">Capability</th>
+              <th class="crivel">Crivel<span class="flag">CH</span></th>
+              <th>Affinity<span class="flag">US</span></th>
+              <th>DealCloud<span class="flag">US</span></th>
+              <th>PitchBook<span class="flag">US</span></th>
+              <th>Gain.pro<span class="flag">EU</span></th>
+              <th>Moneyhouse<span class="flag">CH</span></th>
+            </tr>
           </thead>
           <tbody>
-            <tr><td class="who">Grata, SourceScrub, Cyndx, Inven</td><td>Big private-company databases + AI search</td><td class="muted-cell">US / global-centric; thin, new DACH private coverage</td></tr>
-            <tr><td class="who">Affinity, DealCloud, 4Degrees</td><td>Relationship intelligence + warm-intro paths</td><td class="muted-cell">No DACH entity / owner data; US-cloud SaaS that pulls data out of the tenant</td></tr>
-            <tr><td class="who">PitchBook, Preqin, Orbis</td><td>Private-markets / ownership data at scale</td><td class="muted-cell">Reference databases; weak on small private Swiss firms; no warm path</td></tr>
-            <tr><td class="who">Gain.pro</td><td>Strongest European data play, real DACH depth</td><td class="muted-cell">A research-augmented database for larger-cap PE, not an in-tenant warm-path engine for a 12-person firm</td></tr>
-            <tr><td class="who">DealCircle, Dealsuite, companymarket.ch</td><td>DACH M&amp;A marketplaces / succession listings</td><td class="muted-cell">Advertised listings — the opposite of proprietary origination</td></tr>
-            <tr><td class="who">Moneyhouse, Creditreform</td><td>Swiss register data + monitoring</td><td class="muted-cell">Data sources we use, not origination products</td></tr>
-            <tr class="crivel-row"><td class="who">Crivel</td><td>In-tenant network × DACH entity graph × early-trigger monitoring</td><td>The white space: served white-glove to a small Swiss / DACH firm</td></tr>
+            <tr>
+              <th>DACH entity / owner depth</th>
+              <td class="crivel-cell"><span class="mk yes">&#10003;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk other">&#10003;</span></td>
+              <td><span class="mk other">&#10003;</span></td>
+            </tr>
+            <tr>
+              <th>Data stays in your own tenant</th>
+              <td class="crivel-cell"><span class="mk yes">&#10003;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+            </tr>
+            <tr>
+              <th>Warm-path relationship graph</th>
+              <td class="crivel-cell"><span class="mk yes">&#10003;</span></td>
+              <td><span class="mk other">&#10003;</span></td>
+              <td><span class="mk other">&#10003;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+            </tr>
+            <tr>
+              <th>Early-trigger monitoring</th>
+              <td class="crivel-cell"><span class="mk yes">&#10003;</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk other">&#10003;</span></td>
+            </tr>
+            <tr>
+              <th>Agent-native</th>
+              <td class="crivel-cell"><span class="mk yes">&#10003;</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+            </tr>
+            <tr>
+              <th>Pluggable BYO-key substrate</th>
+              <td class="crivel-cell"><span class="mk yes">&#10003;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+            </tr>
           </tbody>
         </table>
       </div>
-      <div class="grid cols-2" style="margin-top:28px;">
-        <div class="card"><div class="k">The white space</div><p>Nobody combines (1) the firm's in-tenant relationship graph, (2) DACH-deep entity / owner inference from the Handelsregister, and (3) early-trigger monitoring.</p></div>
-        <div class="card"><div class="k">Real threats to watch</div><p>Not the US suites. In order: a Swiss data incumbent moving up (Moneyhouse / Creditreform — the sharpest, most under-weighted risk), a local copycat, then Affinity or Gain.pro drifting toward us.</p></div>
+      <div class="matrix-legend">
+        <span><span class="mk yes">&#10003;</span> Crivel</span>
+        <span><span class="mk other">&#10003;</span> has it</span>
+        <span><span class="mk part">~</span> partial</span>
+        <span><span class="mk no">&#10007;</span> not really</span>
+      </div>
+      <div class="grid cols-2" style="margin-top:40px;">
+        <div class="card"><div class="k">The white space</div><p>Nobody combines the firm's in-tenant relationship graph, DACH-deep entity and owner inference from the register, early-trigger monitoring, and an agent-native design, served white-glove to a small firm.</p></div>
+        <div class="card"><div class="k">Potential threats</div><p>A Swiss data incumbent such as Moneyhouse or Creditreform moving up toward origination. Affinity extending into DACH from the relationship side. Altrata from the wealth side. A local copycat. None is dominant in this wedge today; all are worth watching.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ============ 08 market ============ -->
+  <!-- ============ market ============ -->
   <section id="market">
     <div class="wrap">
       <div class="section-head">
-        <div class="section-num">08 / Market opportunity</div>
-        <h2>A small, concentrated, high-margin niche — and that smallness is a defense.</h2>
-        <p class="lede">The market is too small to be worth attacking for the global suites. We anchor pricing on deal value — one extra proprietary deal dwarfs a decade of subscription — not per-seat.</p>
+        <div class="section-num">Market</div>
+        <h2>A small, concentrated, high-margin niche, and that smallness is a defense.</h2>
+        <p class="lede">The serious-addressable Swiss base is roughly 300 to 500 accounts across the combined buyer, plus a price-sensitive tail. The market stays too small to be worth attacking for the global suites. We anchor pricing on value, one extra proprietary deal or one onboarded client dwarfs a decade of subscription, not per-seat.</p>
       </div>
-      <div class="split">
+      <div class="nested-grid">
+        <div class="nested-panel">
+          <h3>Switzerland</h3>
+          <div class="sub">Combined buyer, bottom-up, web-sourced 2025-2026</div>
+          <svg viewBox="0 0 300 290" role="img" aria-label="Switzerland TAM SAM SOM nested">
+            <g font-family="Geist, sans-serif">
+              <rect x="8" y="8" width="284" height="274" rx="14" fill="#F2F1F0" stroke="#E1DFDB"/>
+              <text x="22" y="30" font-size="12" font-weight="600" fill="#171717">TAM  ~800-1,200</text>
+              <text x="22" y="46" font-size="11" fill="#5b5b58">CHF 15-25M</text>
+              <rect x="44" y="66" width="212" height="190" rx="12" fill="rgba(7,54,34,0.10)"/>
+              <text x="58" y="88" font-size="12" font-weight="600" fill="#073622">SAM  ~300-500</text>
+              <text x="58" y="104" font-size="11" fill="#5b5b58">CHF 8-12M</text>
+              <rect x="86" y="132" width="128" height="108" rx="10" fill="#073622"/>
+              <text x="150" y="180" text-anchor="middle" font-size="12.5" font-weight="600" fill="#ffffff">SOM ~60-120</text>
+              <text x="150" y="200" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.8)">CHF 2-4M ARR</text>
+            </g>
+          </svg>
+        </div>
+        <div class="nested-panel">
+          <h3>DACH (CH + DE + AT)</h3>
+          <div class="sub">Germany is the heavy leg, and its data is better</div>
+          <svg viewBox="0 0 300 290" role="img" aria-label="DACH TAM SAM SOM nested">
+            <g font-family="Geist, sans-serif">
+              <rect x="8" y="8" width="284" height="274" rx="14" fill="#F2F1F0" stroke="#E1DFDB"/>
+              <text x="22" y="30" font-size="12" font-weight="600" fill="#171717">TAM  ~3,000-5,000</text>
+              <text x="22" y="46" font-size="11" fill="#5b5b58">CHF 75-125M</text>
+              <rect x="44" y="66" width="212" height="190" rx="12" fill="rgba(7,54,34,0.10)"/>
+              <text x="58" y="88" font-size="12" font-weight="600" fill="#073622">SAM  ~1,500-2,500</text>
+              <text x="58" y="104" font-size="11" fill="#5b5b58">CHF 40-65M</text>
+              <rect x="86" y="132" width="128" height="108" rx="10" fill="#073622"/>
+              <text x="150" y="180" text-anchor="middle" font-size="12.5" font-weight="600" fill="#ffffff">SOM ~300-400</text>
+              <text x="150" y="200" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.8)">CHF 8-12M ARR</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="split" style="margin-top:40px;">
         <div class="bars">
-          <div class="bar"><div class="row"><span>Switzerland-only · realistic execution</span><span class="v">~1–3M CHF ARR</span></div><div class="track"><div class="fill" style="width:30%"></div></div></div>
-          <div class="bar"><div class="row"><span>Switzerland near-saturation + tail</span><span class="v">~5M CHF (hard ceiling)</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div>
-          <div class="bar"><div class="row"><span>With DACH expansion</span><span class="v">~10M CHF feasible</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
-          <p class="note" style="margin-top:6px;">Category pricing for comparable tools runs CHF / $ 5k–50k+/yr. DACH expansion is gated by register localization and execution, not market size — and Germany's Bundesanzeiger data is <em>better</em>, making the hardest part (sizing) easier.</p>
+          <div class="bar"><div class="row"><span>Switzerland, realistic SOM (3-5 yrs)</span><span class="v">~2-4M CHF ARR</span></div><div class="track"><div class="fill" style="width:35%"></div></div></div>
+          <div class="bar"><div class="row"><span>Switzerland, hard ceiling at deep penetration</span><span class="v">~6-8M CHF</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div>
+          <div class="bar"><div class="row"><span>DACH expansion (~300-400 accounts)</span><span class="v">~10M+ CHF feasible</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+          <p class="note" style="margin-top:6px;">Blended ACV is roughly 20 to 25k (core PE and FO 25 to 30k, the wealth and boutique tail 10 to 15k). The 10M milestone is roughly 300 to 400 accounts inside the DACH SAM. The gate is execution and DE or AT register localization, not the denominator.</p>
         </div>
         <div>
           <h3 style="margin-bottom:16px;">The economics</h3>
           <ul class="ticks">
-            <li><strong>High one-time engineering</strong> — ingestion, entity resolution, inference, the register parser — then near-zero marginal cost per additional client.</li>
-            <li><strong>The shared substrate is shared across all clients</strong>, which is why a 20–50k CHF/yr price stays high-margin.</li>
-            <li><strong>AI runs only at the ends of the funnel</strong>, never in the constant middle — cost scales with the handful of targets that matter, not the size of the register.</li>
-            <li><strong>Onboarding is "connect your network, set your thesis."</strong> Classic SaaS shape, in a niche small enough to defend and large enough for the business we want.</li>
+            <li><strong>High one-time engineering</strong> (ingestion, entity resolution, inference, the register parser), then near-zero marginal cost per additional client.</li>
+            <li><strong>The shared substrate is shared across all clients</strong>, which is why a 20 to 50k CHF/yr price stays high-margin.</li>
+            <li><strong>Per-client onboarding is light:</strong> connect your network, set your thesis. Classic SaaS shape, in a niche small enough to defend and large enough for the business we want.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ 09 why now ============ -->
-  <section class="tone-grey" id="whynow">
+  <!-- ============ next steps ============ -->
+  <section class="tone-grey" id="next">
     <div class="wrap">
       <div class="section-head">
-        <div class="section-num">09 / Why now</div>
-        <h2>Three clocks are aligning.</h2>
+        <div class="section-num">Next steps</div>
+        <h2>Validate before we build, and build the smallest thing that proves it.</h2>
       </div>
       <div class="grid cols-3">
-        <div class="card"><div class="k">The wave</div><h3>Succession is peaking now</h3><p>~93k Swiss SME owners face handover within five years — a one-time density of ownership change that won't repeat at this scale.</p></div>
-        <div class="card"><div class="k">The tech</div><h3>The model is commoditizing</h3><p>LLMs are now cheap enough to make the cited dossier viable — which means the durable edge is the fusion of proprietary data and state, not the AI itself.</p></div>
-        <div class="card"><div class="k">The market</div><h3>Consolidation is live</h3><p>Datasite → Grata, BlackRock → Preqin, FactSet → Cobalt. A credible DACH-niche asset becomes a plausible acquisition story, not just a standalone SaaS.</p></div>
+        <div class="card"><div class="k">Step 01</div><h3>Verify with Julian (Arctos)</h3><p>Pressure-test the concept and the warm-intro count with the design partner who originated the idea, and confirm what day-one value would actually look like for him.</p></div>
+        <div class="card"><div class="k">Step 02</div><h3>Build a small MVP</h3><p>Test technical feasibility end to end with the smallest slice that turns raw data into a ranked, cited target, enough to prove the core works.</p></div>
+        <div class="card"><div class="k">Step 03</div><h3>Verify with further prospects</h3><p>Confirm the concept, the deal-flow density per thesis, and willingness to pay beyond a single believer, across a few more potential clients.</p></div>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ 10 next steps ============ -->
-  <section id="next">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="section-num">10 / Where we are &amp; what's next</div>
-        <h2>One warm believer is not a market. Here's what we'd pin down next.</h2>
-        <p class="lede">De-risked: we have a pilot client, and the idea came from him — which answers the single biggest question (will a real firm connect its network and pay). Still unproven, in priority order:</p>
-      </div>
-      <div class="qlist">
-        <div class="q"><div class="mark">→</div><div class="body"><strong>The CAC-deciding metric</strong><span>How many of the ~110 core Swiss accounts can the pilot personally warm-introduce us to? 15–20 and the small-firm sales problem dissolves; 2–3 and GTM needs a different answer. The single number we most want to pin down.</span></div></div>
-        <div class="q"><div class="mark">→</div><div class="body"><strong>Deal-flow density per thesis</strong><span>The sharpest product risk. In a narrow thesis, only a handful of companies may turn interesting in a year — the fit list and direct search keep it alive between signals. Confirm live density against the pilot's actual thesis.</span></div></div>
-        <div class="q"><div class="mark">→</div><div class="body"><strong>Renewal value beyond the deal</strong><span>A closed deal takes years and credit is hard to attribute. Renewal rests on day-one felt value: the cited dossier saving expensive Swiss analyst time, and the firm trusting the feed not to miss its niche.</span></div></div>
-        <div class="q"><div class="mark">→</div><div class="body"><strong>Pre-empt the incumbent moving up</strong><span>Is there a way to partner with Moneyhouse / Creditreform rather than race them?</span></div></div>
-        <div class="q"><div class="mark">→</div><div class="body"><strong>The exit lens &amp; sequencing</strong><span>Does the consolidation trend make this a deliberately acquisition-shaped strategy — and is dossier-first, prediction-later the right discipline, or are we underselling the forward-looking score that may be the deepest moat?</span></div></div>
-      </div>
+      <p class="kicker-line">Everything here is a current best view, not a commitment. Challenge it.</p>
     </div>
   </section>
 
   <!-- ============ footer ============ -->
   <footer>
-    <div class="wrap">
-      <img src="assets/crivel_full_logo_white.svg" alt="Crivel" />
-      <div class="meta"><strong>Internal working artifact — challenge it.</strong> Everything here is a current best view, not a commitment. A Quantflow product · June 2026.</div>
+    <div class="footer-inner">
+      <img class="footer-icon" src="assets/crivel_icon_white.svg" alt="Crivel" />
+      <div class="footer-story">
+        <h3>Crivel</h3>
+        <p>Romansh for kestrel: the bird that hovers over a wide field, scans patiently, holds its position, and strikes only on the one movement that matters.</p>
+        <p>That is the product, almost literally. Monitor a vast universe, hold a vantage point, surface the one signal that counts, and find the precise, warmest line in.</p>
+        <p class="fine">A Quantflow product. 23.06.2026.</p>
+      </div>
     </div>
   </footer>
 
