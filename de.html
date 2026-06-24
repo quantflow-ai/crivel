@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crivel · Internes Memo</title>
+  <meta name="description" content="Crivel ist die In-Tenant-Origination-Engine für kleine Private-Capital-Firmen. Internes Arbeitsmemo." />
+  <link rel="icon" type="image/svg+xml" href="assets/crivel_icon_green.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ floating segmented nav ============ -->
+  <nav class="flownav">
+    <div class="group">
+      <a class="brand-seg icon-seg" href="#top" aria-label="Crivel"><img src="assets/crivel_icon_black.svg" alt="Crivel" /></a>
+      <a href="#problem">Problem</a>
+      <a href="#product">Funktionsweise</a>
+      <a href="#sources">Datenebene</a>
+      <a href="#moat">Verteidigbarkeit</a>
+      <a href="#market">Markt</a>
+      <a href="#next">Ausblick</a>
+      <span class="lang"><a href="index.html">EN</a><a class="on" href="de.html">DE</a></span>
+    </div>
+  </nav>
+
+  <!-- ============ hero ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg"><img src="assets/crivel_icon_green.svg" alt="" /></div>
+    <div class="wrap">
+      <span class="memo-pill">Internes Memo</span>
+      <h1>Die In-Tenant-Origination-Engine für Private-Capital-Firmen.</h1>
+      <p class="sub">Crivel verbindet das eigene Beziehungsnetzwerk einer Firma mit einem tiefen Graphen privater Unternehmen und überwacht diesen anhand der Strategie der Firma. Es bringt die lohnenden Ziele und den wärmsten Weg zur Entscheidungsperson zum Vorschein.</p>
+      <div class="status-line"><strong>Status:</strong> Ideation &nbsp;·&nbsp; <strong>Datum:</strong> 23.06.2026 &nbsp;·&nbsp; <strong>Owner:</strong> Mischa</div>
+      <div class="hero-byline">ein Produkt von quantflow</div>
+    </div>
+  </section>
+
+  <!-- ============ problem ============ -->
+  <section id="problem">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">Das Problem</div>
+        <h2>Proprietäre Origination entscheidet sich über Beziehungen und Timing, und kleine Firmen erledigen das von Hand.</h2>
+        <p class="lede">Die besten Gelegenheiten, ein Unternehmen zum Kauf oder eine vermögende Inhaberin als Kundin, werden gefunden und gesichert, bevor sie in einen kompetitiven Prozess geraten, wo sich Preis und Chancen gegen einen wenden. Sie zu gewinnen hängt an zwei Dingen, und eine kleine, netzwerkgetriebene Firma erledigt beide manuell.</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card">
+          <div class="k">Problem 01</div>
+          <h3>Wissen, welche Ziele passen und welche im Spiel sind</h3>
+          <p>Aus einem riesigen Universum: Welche Ziele passen wirklich zum Mandat der Firma, und welche sind jetzt erreichbar oder bewegen sich still auf eine Transaktion zu? Das Signal steckt in Registereinträgen, Regionalpresse und strukturellen Veränderungen, die niemand systematisch beobachtet.</p>
+        </div>
+        <div class="card">
+          <div class="k">Problem 02</div>
+          <h3>Die Entscheidungsperson über jemanden erreichen, dem sie vertraut</h3>
+          <p>Inhaber und UHNW-Personen lassen sich auf Menschen ein, denen sie vertrauen, nicht auf den, der kalt anruft. Die Beziehung gewinnt. Sie liegt verstreut über die Postfächer, Kalender und Köpfe der Partner und wird nie kartiert.</p>
+        </div>
+      </div>
+      <div class="callout-green">
+        <div class="k">Die Lücke im Markt</div>
+        <p>Das ist genau dort am schwierigsten, wo die Gelegenheit am grössten ist. In der Schweiz und im weiteren DACH-Raum veröffentlichen private Unternehmen kaum Finanzzahlen, schon das Erstellen der Liste ist Arbeit, und die globalen Software-Suiten sind auf US-Breite ausgelegt, verstehen diese privaten Unternehmen nicht und ziehen die Daten der Firma in eine US-Cloud. <span class="muted">Tiefe Daten zu privaten Unternehmen, plus das eigene Netzwerk der Firma, plus laufende Überwachung, im eigenen Tenant der Firma, ist unbesetzt.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ how it works ============ -->
+  <section class="tone-paper" id="product">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">Funktionsweise</div>
+        <h2>Zwei Graphen, verbunden durch die Strategie der Firma.</h2>
+        <p class="lede">Crivel baut einen Graphen öffentlicher Daten über Unternehmen, Personen und Ereignisse, dasselbe Substrat für alle unsere Kunden. Jede Firma hat zudem einen zweiten Graphen: ihr eigenes privates Beziehungsnetzwerk, hart isoliert im eigenen Tenant und nie geteilt. Die Strategie der Firma verbindet beide. Sie filtert das Universum auf das Mandat, überwacht es auf Auslöser und bewertet, was auftaucht, sodass dasselbe Ereignis für jede Firma ein anderes, gereihtes Ziel ergibt.</p>
+      </div>
+
+      <figure class="figure">
+        <svg viewBox="0 0 820 380" role="img" aria-label="Ein öffentlicher Datengraph und ein privater In-Tenant-Beziehungsgraph verbinden sich durch die Strategie der Firma, die filtert, überwacht und bewertet, zu einer gereihten, belegten Liste von Zielen">
+          <defs>
+            <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto">
+              <path d="M0,0 L7,3.2 L0,6.4 Z" fill="#073622"/>
+            </marker>
+          </defs>
+          <g font-family="Geist, sans-serif">
+            <!-- public graph plane -->
+            <rect x="24" y="34" width="252" height="126" rx="12" fill="#FFFFFF" stroke="#E1DFDB"/>
+            <text x="44" y="60" font-size="13" font-weight="600" fill="#073622">Öffentlicher Datengraph</text>
+            <text x="44" y="78" font-size="11" fill="#5b5b58">Unternehmen, Personen, Ereignisse</text>
+            <text x="44" y="93" font-size="11" fill="#9a978f">geteilt über unsere Kunden</text>
+            <g stroke="#cfccc6" stroke-width="1.3">
+              <line x1="120" y1="134" x2="86" y2="120"/>
+              <line x1="120" y1="134" x2="152" y2="114"/>
+              <line x1="120" y1="134" x2="198" y2="136"/>
+            </g>
+            <circle cx="86" cy="120" r="5.5" fill="#fff" stroke="#cfccc6" stroke-width="1.4"/>
+            <circle cx="152" cy="114" r="5.5" fill="#fff" stroke="#cfccc6" stroke-width="1.4"/>
+            <rect x="193" y="131" width="10" height="10" rx="2" fill="#fff" stroke="#cfccc6" stroke-width="1.4"/>
+            <circle cx="120" cy="134" r="7" fill="#073622"/>
+            <!-- private graph plane -->
+            <rect x="24" y="204" width="252" height="126" rx="12" fill="#FFFFFF" stroke="#073622"/>
+            <text x="44" y="230" font-size="13" font-weight="600" fill="#073622">Ihr Beziehungsgraph</text>
+            <text x="44" y="248" font-size="11" fill="#5b5b58">im Tenant, isoliert, nie geteilt</text>
+            <g stroke="#9fc4b3" stroke-width="1.4">
+              <line x1="86" y1="298" x2="148" y2="282"/>
+              <line x1="148" y1="282" x2="190" y2="306"/>
+              <line x1="86" y1="298" x2="190" y2="306"/>
+            </g>
+            <circle cx="86" cy="298" r="8" fill="#fff" stroke="#073622" stroke-width="2"/>
+            <circle cx="148" cy="282" r="5.5" fill="#fff" stroke="#9a978f" stroke-width="1.4"/>
+            <circle cx="190" cy="306" r="5.5" fill="#fff" stroke="#9a978f" stroke-width="1.4"/>
+            <!-- connectors into strategy -->
+            <path d="M276 118 L336 168" stroke="#073622" stroke-width="1.6" fill="none"/>
+            <path d="M276 266 L336 220" stroke="#073622" stroke-width="1.6" fill="none"/>
+            <!-- strategy engine -->
+            <rect x="336" y="118" width="156" height="150" rx="16" fill="#073622"/>
+            <text x="414" y="146" text-anchor="middle" font-size="13.5" font-weight="600" fill="#ffffff">Ihre Strategie</text>
+            <g>
+              <rect x="356" y="160" width="116" height="26" rx="13" fill="none" stroke="rgba(255,255,255,0.35)"/>
+              <text x="414" y="177" text-anchor="middle" font-size="12" fill="#dff0e8">Filtern</text>
+              <rect x="356" y="194" width="116" height="26" rx="13" fill="none" stroke="rgba(255,255,255,0.35)"/>
+              <text x="414" y="211" text-anchor="middle" font-size="12" fill="#dff0e8">Überwachen</text>
+              <rect x="356" y="228" width="116" height="26" rx="13" fill="none" stroke="rgba(255,255,255,0.35)"/>
+              <text x="414" y="245" text-anchor="middle" font-size="12" fill="#dff0e8">Bewerten</text>
+            </g>
+            <path d="M492 193 L540 193" stroke="#073622" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+            <!-- output: ranked targets -->
+            <rect x="542" y="118" width="254" height="150" rx="12" fill="#FFFFFF" stroke="#E1DFDB"/>
+            <text x="562" y="146" font-size="13" font-weight="600" fill="#073622">Gereihte Ziele</text>
+            <g font-size="11" fill="#5b5b58">
+              <text x="562" y="174">1</text><rect x="576" y="166" width="190" height="9" rx="4" fill="#073622"/>
+              <text x="562" y="198">2</text><rect x="576" y="190" width="150" height="9" rx="4" fill="#3f6a57"/>
+              <text x="562" y="222">3</text><rect x="576" y="214" width="110" height="9" rx="4" fill="#7fa191"/>
+            </g>
+            <text x="562" y="250" font-size="11" fill="#9a978f">jeweils belegt, mit dem warmen Weg hinein</text>
+            <!-- scoring formula, tied to Score -->
+            <text x="410" y="360" text-anchor="middle" font-size="11" fill="#8a877f">Score = Fit-Gate &#215; Attraktivität &#215; (Basis + Erreichbarkeit) &#215; (1 + Timing) &#215; Gewinnbarkeit</text>
+          </g>
+        </svg>
+        <figcaption class="fig-cap">Ein Ziel ist ein Unternehmen oder eine Person. Der warme Weg ist additiv: Ziele ohne Zugang erscheinen trotzdem, nur tiefer gereiht.</figcaption>
+      </figure>
+
+      <h3 style="margin:50px 0 18px;">Der Trichter, fortlaufend betrieben</h3>
+      <div class="funnel-v">
+        <div class="frow"><div class="n">1</div><div class="t">Universum &amp; Überwachung<span class="d">Das Universum aus der Datenebene aufbauen, dann den täglichen Änderungsstrom aufnehmen, um Ereignisse sofort zu erfassen.</span></div></div>
+        <div class="frow"><div class="n">2</div><div class="t">Thesis-Fit<span class="d">Die Strategie der Firma verengt das Universum auf ihr Mandat und alarmiert, wenn ein Ziel neu hineinfällt.</span></div></div>
+        <div class="frow"><div class="n">3</div><div class="t">Timing &amp; Auslöser<span class="d">Frühe Vorboten aus gleichzeitig auftretenden Signalen innerhalb eines Fensters erkennen und die Priorität dessen anheben, was heiss wird.</span></div></div>
+        <div class="frow"><div class="n">4</div><div class="t">Stakeholder &amp; warmer Weg<span class="d">Klären, wer tatsächlich entscheidet, dann das Netzwerk der Firma überlagern für die wärmste Route dorthin.</span></div></div>
+        <div class="frow"><div class="n">5</div><div class="t">Agentenebene<span class="d">Agentische Workflows auf dem Ergebnis ausführen: ein belegter Recherchebericht, ein E-Mail-Entwurf und mit der Zeit mehr.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ data layer ============ -->
+  <section id="sources">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">Die Datenebene</div>
+        <h2>Ein Graph, drei Arten von Input. Der Graph ist der Wert; die Beschaffung ist Commodity.</h2>
+        <p class="lede">Kein einzelner Datensatz ist das Produkt. Drei Arten von Quellen stecken in einem kanonischen Graphen, und weil alles im Tenant der Firma läuft, fliessen lizenzierte und private Daten in den eigenen Graphen der Firma und verlassen ihn nie.</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="card green-tint"><div class="k">Von Crivel gebaut</div><h3>Die Datenpipeline</h3><p>Die öffentlichen Register, die wir selbst aufnehmen und strukturieren: Zefix, der SOGC-Änderungsstrom, die kantonalen Register, ausgedehnt über DACH bis zum Bundesanzeiger und darüber hinaus. Das Substrat, das wir bauen und besitzen.</p></div>
+        <div class="card"><div class="k">Bring your own</div><h3>Drittanbieter-APIs</h3><p>Die Datenanbieter anbinden, für die eine Firma bereits bezahlt, etwa PitchBook. Optional und ein Weg, den Graphen anzureichern oder in neue Regionen auszudehnen. Der Kunde hält den Schlüssel; wir bündeln nie Daten über Firmen hinweg.</p></div>
+        <div class="card"><div class="k">Das Eigene der Firma</div><h3>Netzwerkdaten der Firma</h3><p>Die eigenen Beziehungen, das CRM und erfasste Insights der Firma bilden den privaten In-Tenant-Graphen, der den warmen Weg speist.</p></div>
+      </div>
+      <div class="callout-green">
+        <div class="k">Und es akkumuliert</div>
+        <p>Die Pipeline, Notizen zu Zielen, die Outreach-Historie und die Pass-oder-Verfolgen-Entscheidungen leben alle hier, und Korrekturen der Analysten schreiben in den Graphen zurück. Mit der Zeit wird Crivel zum institutionellen Sourcing-Gedächtnis der Firma, <span class="muted">genau das würde ein Wechsel sie kosten.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ one engine, two motions ============ -->
+  <section class="tone-grey" id="segments">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">Eine Engine, zwei Bewegungen</div>
+        <h2>Dieselbe Engine kauft ein Unternehmen oder gewinnt einen Kunden.</h2>
+        <p class="lede">Origination ist strukturell dasselbe Problem, ob das Ziel ein Unternehmen zum Erwerb oder eine Person zum Onboarding ist: Ziel finden, Fit beurteilen, recherchieren, den warmen Weg finden, Kontakt aufnehmen. Ein Ziel ist ein Unternehmen oder eine Person, und die Engine ändert sich nicht. Die Divergenz beschränkt sich auf die Strategieebene und die Agentenebene, sodass wir beide aus einem Kern bedienen.</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card"><div class="k">Bewegung 01</div><h3>Deal-Origination</h3><p>Das Unternehmen kaufen. Das Ziel ist ein privates Unternehmen, der Auslöser ist eine Nachfolge oder ein struktureller Schritt, und der warme Weg läuft über seine Berater und das Netzwerk der Firma.</p></div>
+        <div class="card"><div class="k">Bewegung 02</div><h3>Kunden-Origination</h3><p>Den Kunden gewinnen. Das Ziel ist eine UHNW-Inhaberin, der Auslöser ist ein Liquiditäts- oder Exit-Ereignis, und der warme Weg läuft über gemeinsame Centres of Influence. Gewonnen durch warme Einführung, nicht durch Kaltakquise.</p></div>
+      </div>
+      <p class="kicker-line">Der Käufer ist die kombinierte Private-Capital-Firma: Lower-Mid-Market-PE, direkt investierende Family Offices, Multi-Family-Offices, netzwerkgetriebene Vermögensverwalter und die besseren M&amp;A-Boutiquen. Viele tun beides unter einem Dach, sodass ein Verkauf zwei Anwendungsfälle erschliesst. Wir bauen zuerst Deal-Origination, mit Kunden-Origination als schnellem Nachzug auf derselben Basis.</p>
+    </div>
+  </section>
+
+  <!-- ============ agent-native ============ -->
+  <section id="agent">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">Agent-native</div>
+        <h2>Agent-native gebaut, damit wir Automatisierung auf die Plattform aufsetzen können.</h2>
+        <p class="lede">Crivel ist von Anfang an agent-native gebaut. Die Daten und Aktionen der Plattform sind als saubere, typisierte, belegte Objekte strukturiert, auf denen ein Agent handeln kann, nicht nachträglich auf ein reines Menschen-Tool aufgesetzt. Das erlaubt uns, ein Agenten-Framework darauf zu bauen und auszubauen, um beliebige Workflows über die Daten der Firma laufen zu lassen, und es erlaubt einer Firma, Crivel direkt in Claude zu nutzen.</p>
+      </div>
+      <div class="seam">
+        <div class="col">
+          <div class="k">Von Anfang an</div>
+          <h3>Agentenbereite Objekte</h3>
+          <p>Jedes Ziel, Signal, jeder warme Weg und jedes Dossier ist ein strukturiertes, belegtes Objekt, das ein Agent lesen und darauf handeln kann.</p>
+          <div class="chips">
+            <span class="chip">Ziele</span><span class="chip">Signale</span><span class="chip">Warme Wege</span><span class="chip">Dossiers</span>
+          </div>
+        </div>
+        <div class="col mid">
+          <div class="k">Auf der Plattform</div>
+          <h3>Unser Agenten-Framework</h3>
+          <p>Wir bauen und erweitern Workflows über die Daten der Plattform: ein belegter Recherchebericht, ein E-Mail-Entwurf und mit der Zeit mehr Automatisierungen.</p>
+        </div>
+        <div class="col">
+          <div class="k">MCP-Schnittstelle</div>
+          <h3>Aus Claude heraus nutzen</h3>
+          <p>Eine Firma ruft Crivel aus Claude heraus auf, erhält belegte Ergebnisse zurück und arbeitet dort weiter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ defensibility (the one dark beat) ============ -->
+  <section class="tone-dark" id="moat">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">Warum es verteidigbar ist</div>
+        <h2>Der Burggraben ist die Kombination, nicht ein einzelnes Feature.</h2>
+        <p class="lede">Das LLM wird zur Commodity, und die offenen Registerdaten sind scrapebar. Keine einzelne Ebene ist der Burggraben. Die verteidigbare Position ist die Verschmelzung von vier Dingen, die sich mit der Nutzung verstärken, an einem Ort, den ein Wettbewerber nicht billig kopieren kann.</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card"><div class="k">Ebene 01</div><h3>DACH-tiefer Entitätsgraph</h3><p>Ein persistenter, fortlaufend angereicherter Corporate-Control-Graph mit Eigentümer-Inferenz, die die US-Suiten bei kleinen Privatunternehmen nicht erreichen. Das CH-Register wirtschaftlich Berechtigter bleibt uns verschlossen, also bleibt Eigentum ein dauerhaftes Inferenzproblem, was selbst der Burggraben ist.</p></div>
+        <div class="card"><div class="k">Ebene 02</div><h3>In-Tenant, modulares Substrat</h3><p>Die sensiblen Daten der Firma bleiben in ihrer eigenen Cloud-Grenze, in der Schweiz ansässig. Lizenzierte Daten fliessen hinein und verlassen sie nie, was zugleich sauberer bei den Bedingungen, der Burggraben und die Compliance-Story ist.</p></div>
+        <div class="card"><div class="k">Ebene 03</div><h3>Aktualität und frühe Auslöser</h3><p>Ereigniserkennung auf dem laufenden Änderungsstrom, abgestimmt auf die Vorboten-Kombinationen, die vorhersagen, dass eine Firma an den Markt kommt oder ein Inhaber ein Liquiditätsereignis erreicht.</p></div>
+        <div class="card"><div class="k">Ebene 04</div><h3>Akkumulierender Zustand</h3><p>Die Pipeline und Entscheidungen der Firma leben hier und schreiben in den Graphen zurück, sodass die Genauigkeit mit der Nutzung steigt und das Produkt zum täglichen Werkzeug wird. Ein Wechsel bedeutet, das institutionelle Sourcing-Gedächtnis der Firma zu verlieren.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ competitive landscape ============ -->
+  <section class="tone-paper" id="landscape">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">Wettbewerbsumfeld</div>
+        <h2>Jeder besitzt eine Kategorie. Niemand verschmilzt den Keil für diese Geografie.</h2>
+        <p class="lede">Der Markt zerfällt in Kategorien, die fast niemand kombiniert. Crivel verschmilzt mehrere davon für eine enge Geografie, White-Glove an eine kleine Firma geliefert.</p>
+      </div>
+      <div class="matrix-wrap">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th class="cap">Fähigkeit</th>
+              <th class="crivel">Crivel<span class="flag">CH</span></th>
+              <th>Affinity<span class="flag">US</span></th>
+              <th>DealCloud<span class="flag">US</span></th>
+              <th>PitchBook<span class="flag">US</span></th>
+              <th>Gain.pro<span class="flag">EU</span></th>
+              <th>Moneyhouse<span class="flag">CH</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>DACH-Entitäts- / Eigentümertiefe</th>
+              <td class="crivel-cell"><span class="mk yes">&#10003;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk other">&#10003;</span></td>
+              <td><span class="mk other">&#10003;</span></td>
+            </tr>
+            <tr>
+              <th>Daten bleiben im eigenen Tenant</th>
+              <td class="crivel-cell"><span class="mk yes">&#10003;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+            </tr>
+            <tr>
+              <th>Warm-Path-Beziehungsgraph</th>
+              <td class="crivel-cell"><span class="mk yes">&#10003;</span></td>
+              <td><span class="mk other">&#10003;</span></td>
+              <td><span class="mk other">&#10003;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+            </tr>
+            <tr>
+              <th>Früh-Auslöser-Überwachung</th>
+              <td class="crivel-cell"><span class="mk yes">&#10003;</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk other">&#10003;</span></td>
+            </tr>
+            <tr>
+              <th>Agent-native</th>
+              <td class="crivel-cell"><span class="mk yes">&#10003;</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+            </tr>
+            <tr>
+              <th>Modulares BYO-Key-Substrat</th>
+              <td class="crivel-cell"><span class="mk yes">&#10003;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk part">~</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+              <td><span class="mk no">&#10007;</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="matrix-legend">
+        <span><span class="mk yes">&#10003;</span> Crivel</span>
+        <span><span class="mk other">&#10003;</span> hat es</span>
+        <span><span class="mk part">~</span> teilweise</span>
+        <span><span class="mk no">&#10007;</span> kaum</span>
+      </div>
+      <div class="grid cols-2" style="margin-top:40px;">
+        <div class="card"><div class="k">Die Leerstelle</div><p>Niemand kombiniert den In-Tenant-Beziehungsgraphen der Firma, DACH-tiefe Entitäts- und Eigentümer-Inferenz aus dem Register, Früh-Auslöser-Überwachung und ein agent-natives Design, White-Glove an eine kleine Firma geliefert.</p></div>
+        <div class="card"><div class="k">Mögliche Bedrohungen</div><p>Ein Schweizer Dateninkumbent wie Moneyhouse oder Creditreform, der Richtung Origination aufsteigt. Affinity, das von der Beziehungsseite nach DACH expandiert. Altrata von der Vermögensseite. Ein lokaler Nachahmer. Keiner dominiert diesen Keil heute; alle sind beobachtenswert.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ market ============ -->
+  <section id="market">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">Markt</div>
+        <h2>Eine kleine, konzentrierte, margenstarke Nische, und diese Kleinheit ist eine Verteidigung.</h2>
+        <p class="lede">Die ernsthaft adressierbare Schweizer Basis liegt bei rund 300 bis 500 Accounts über den kombinierten Käufer, plus ein preissensitiver Long Tail. Der Markt bleibt zu klein, als dass sich ein Angriff für die globalen Suiten lohnt. Wir verankern den Preis am Wert, ein zusätzlicher proprietärer Deal oder ein gewonnener Kunde überragt ein Jahrzehnt Abonnement, nicht pro Platz.</p>
+      </div>
+      <div class="nested-grid">
+        <div class="nested-panel">
+          <h3>Schweiz</h3>
+          <div class="sub">Kombinierter Käufer, Bottom-up, webbasiert 2025-2026</div>
+          <svg viewBox="0 0 300 290" role="img" aria-label="Schweiz TAM SAM SOM verschachtelt">
+            <g font-family="Geist, sans-serif">
+              <rect x="8" y="8" width="284" height="274" rx="14" fill="#F2F1F0" stroke="#E1DFDB"/>
+              <text x="22" y="30" font-size="12" font-weight="600" fill="#171717">TAM  ~800-1,200</text>
+              <text x="22" y="46" font-size="11" fill="#5b5b58">CHF 15-25 Mio.</text>
+              <rect x="44" y="66" width="212" height="190" rx="12" fill="rgba(7,54,34,0.10)"/>
+              <text x="58" y="88" font-size="12" font-weight="600" fill="#073622">SAM  ~300-500</text>
+              <text x="58" y="104" font-size="11" fill="#5b5b58">CHF 8-12 Mio.</text>
+              <rect x="86" y="132" width="128" height="108" rx="10" fill="#073622"/>
+              <text x="150" y="180" text-anchor="middle" font-size="12.5" font-weight="600" fill="#ffffff">SOM ~60-120</text>
+              <text x="150" y="200" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.8)">CHF 2-4 Mio. ARR</text>
+            </g>
+          </svg>
+        </div>
+        <div class="nested-panel">
+          <h3>DACH (CH + DE + AT)</h3>
+          <div class="sub">Deutschland ist das schwere Bein, und seine Daten sind besser</div>
+          <svg viewBox="0 0 300 290" role="img" aria-label="DACH TAM SAM SOM verschachtelt">
+            <g font-family="Geist, sans-serif">
+              <rect x="8" y="8" width="284" height="274" rx="14" fill="#F2F1F0" stroke="#E1DFDB"/>
+              <text x="22" y="30" font-size="12" font-weight="600" fill="#171717">TAM  ~3,000-5,000</text>
+              <text x="22" y="46" font-size="11" fill="#5b5b58">CHF 75-125 Mio.</text>
+              <rect x="44" y="66" width="212" height="190" rx="12" fill="rgba(7,54,34,0.10)"/>
+              <text x="58" y="88" font-size="12" font-weight="600" fill="#073622">SAM  ~1,500-2,500</text>
+              <text x="58" y="104" font-size="11" fill="#5b5b58">CHF 40-65 Mio.</text>
+              <rect x="86" y="132" width="128" height="108" rx="10" fill="#073622"/>
+              <text x="150" y="180" text-anchor="middle" font-size="12.5" font-weight="600" fill="#ffffff">SOM ~300-400</text>
+              <text x="150" y="200" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.8)">CHF 8-12 Mio. ARR</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="split" style="margin-top:40px;">
+        <div class="bars">
+          <div class="bar"><div class="row"><span>Schweiz, realistisches SOM (3-5 Jahre)</span><span class="v">~2-4 Mio. CHF ARR</span></div><div class="track"><div class="fill" style="width:35%"></div></div></div>
+          <div class="bar"><div class="row"><span>Schweiz, harte Decke bei tiefer Durchdringung</span><span class="v">~6-8 Mio. CHF</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div>
+          <div class="bar"><div class="row"><span>DACH-Expansion (~300-400 Accounts)</span><span class="v">~10 Mio.+ CHF machbar</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+          <p class="note" style="margin-top:6px;">Der gemischte ACV liegt bei rund 20 bis 25k (Kern PE und FO 25 bis 30k, der Vermögens- und Boutique-Tail 10 bis 15k). Der 10-Mio.-Meilenstein sind rund 300 bis 400 Accounts innerhalb des DACH-SAM. Das Tor ist Umsetzung und DE- oder AT-Register-Lokalisierung, nicht der Nenner.</p>
+        </div>
+        <div>
+          <h3 style="margin-bottom:16px;">Die Ökonomie</h3>
+          <ul class="ticks">
+            <li><strong>Hohe einmalige Entwicklung</strong> (Ingestion, Entitätsauflösung, Inferenz, der Register-Parser), dann nahezu null Grenzkosten pro zusätzlichem Kunden.</li>
+            <li><strong>Das geteilte Substrat wird über alle Kunden geteilt</strong>, weshalb ein Preis von 20 bis 50k CHF/Jahr margenstark bleibt.</li>
+            <li><strong>Das Onboarding pro Kunde ist leicht:</strong> Netzwerk verbinden, Strategie setzen. Klassische SaaS-Form, in einer Nische klein genug zum Verteidigen und gross genug für das gewünschte Geschäft.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ next steps ============ -->
+  <section class="tone-grey" id="next">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">Nächste Schritte</div>
+        <h2>Validieren, bevor wir bauen, und das Kleinste bauen, das es beweist.</h2>
+      </div>
+      <div class="grid cols-3">
+        <div class="card"><div class="k">Schritt 01</div><h3>Mit Julian (Arctos) validieren</h3><p>Das Konzept und die Warm-Intro-Zahl mit dem Design-Partner druckprüfen, von dem die Idee stammt, und klären, wie der Tag-eins-Wert für ihn tatsächlich aussähe.</p></div>
+        <div class="card"><div class="k">Schritt 02</div><h3>Ein kleines MVP bauen</h3><p>Die technische Machbarkeit Ende zu Ende mit der kleinsten Scheibe testen, die Rohdaten in ein gereihtes, belegtes Ziel verwandelt, genug, um den Kern zu beweisen.</p></div>
+        <div class="card"><div class="k">Schritt 03</div><h3>Mit weiteren Interessenten validieren</h3><p>Das Konzept, die Deal-Flow-Dichte pro These und die Zahlungsbereitschaft über einen einzelnen Gläubigen hinaus bestätigen, bei einigen weiteren potenziellen Kunden.</p></div>
+      </div>
+      <p class="kicker-line">Alles hier ist eine aktuelle beste Einschätzung, keine Festlegung. Hinterfrage es.</p>
+    </div>
+  </section>
+
+  <!-- ============ footer ============ -->
+  <footer>
+    <div class="footer-inner">
+      <img class="footer-icon" src="assets/crivel_icon_white.svg" alt="Crivel" />
+      <div class="footer-story">
+        <h3>Crivel</h3>
+        <p>Rätoromanisch für Turmfalke: der Vogel, der über einem weiten Feld rüttelt, geduldig absucht, seine Position hält und nur auf die eine Bewegung zustösst, die zählt.</p>
+        <p>Das ist das Produkt, fast wörtlich. Ein riesiges Universum überwachen, einen Aussichtspunkt halten, das eine Signal hervorbringen, das zählt, und die präzise, wärmste Linie hinein finden.</p>
+        <p class="fine">Ein Quantflow-Produkt. 23.06.2026.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
